@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class = "Tic_Tac_Toe_Xamarin.ParametresPage"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="ttt.jpg"/>
+            <Button  x:Name="BackMainPage"
+                     Clicked="BackMainPageClick"
+                     HeightRequest="40"
+                     WidthRequest="100"
+                     HorizontalOptions="Start"
+                     Margin="12,0,0,0"
+                     BackgroundColor = "{DynamicResource NavigationBarColor}"
+                     BorderWidth="5"
+                     BorderColor="{DynamicResource PrimaryColor}" 
+                     CornerRadius="10"
+                     Text="НАЗАД"
+                     FontSize = "15"
+                     FontAttributes = "Bold"
+                     TextColor = "{DynamicResource PrimaryTextColor}"
+                     >
+            </Button>
+            <Button  x:Name = "SizeField"
+                     Clicked = "ChoiceSizeField"
+                     HeightRequest = "60"
+                     WidthRequest = "500"
+                     HorizontalOptions = "Center"
+                     VerticalOptions = "Center"
+                     Margin = "50,100,50,5"
+                     BackgroundColor = "{DynamicResource NavigationBarColor}"
+                     BorderWidth = "5"
+                     BorderColor = "{DynamicResource PrimaryColor}"                     
+                     CornerRadius = "10"
+                     Text = "РАЗМЕР ИГРОВОГО ПОЛЯ"
+                     FontSize = "18"
+                     FontAttributes = "Bold"
+                     TextColor = "{DynamicResource PrimaryTextColor}"
+                     >
+            </Button>
+            <Label HorizontalOptions = "Center"
+                   Text = "Player - X"
+                   Margin = "50,0,50,5"
+                   FontSize = "18"
+                   FontAttributes = "Bold"
+                   TextColor = "{DynamicResource SecondaryTextColor}"
+                   >
+            </Label>
+            <Entry x:Name = "NamePlayerX"
+                   Placeholder = "Name"
+                   BackgroundColor="{DynamicResource TransparentColor}"
+                   TextColor="{DynamicResource PrimaryTextColor}"
+                   PlaceholderColor="{DynamicResource SecondaryColor}"
+                   Margin = "50,0,50,5"
+                   >
+            </Entry>
+            <Label HorizontalOptions="Center"
+                   Text="Player - O"
+                   Margin="50,0,50,5"
+                   FontSize="18"
+                   FontAttributes = "Bold"
+                   TextColor="{DynamicResource SecondaryTextColor}"
+                   >
+            </Label>
+            <Entry x:Name = "NamePlayerO"
+                   Placeholder = "Name"
+                   BackgroundColor="{DynamicResource TransparentColor}"
+                   TextColor="{DynamicResource PrimaryTextColor}"
+                   PlaceholderColor="{DynamicResource SecondaryColor}"
+                   Margin = "50,0,50,5"
+                   >
+            </Entry>
+            <Button  x:Name = "StartGame"
+                     Clicked = "StartGameClick"
+                     HeightRequest="60"
+                     WidthRequest="500"
+                     HorizontalOptions="Center"
+                     VerticalOptions = "Center"
+                     Margin="50,0,50,100"
+                     BackgroundColor="{DynamicResource NavigationBarColor}"
+                     BorderWidth="5"
+                     BorderColor="{DynamicResource PrimaryColor}"
+                     CornerRadius="10"
+                     Text="НАЧАТЬ ИГРУ"
+                     FontSize = "18"
+                     FontAttributes = "Bold"
+                     TextColor = "{DynamicResource PrimaryTextColor}"
+                     >
+            </Button>
+            <Picker x:Name="Picker"
+                    Title = "Выбор темы"
+                    HorizontalTextAlignment="Center"
+                    BackgroundColor="{DynamicResource NavigationBarColor}"
+                    TextColor="{DynamicResource PrimaryTextColor}"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    SelectedIndexChanged = "ChangeTheme"
+                    HorizontalOptions = "CenterAndExpand"
+                    ItemsSource="{Binding Themes}"
+                    SelectedItem = "{Binding SelectedTheme}"
+                    >
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tic_Tac_Toe_Xamarin.GamePage4"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions = "Center"
+                  Margin = "0,150,0,100"
+                  BackgroundColor="{DynamicResource PrimaryColor}"
+                  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "90"></RowDefinition>
+                    <RowDefinition Height = "90"></RowDefinition>
+                    <RowDefinition Height = "90"></RowDefinition>
+                    <RowDefinition Height = "90"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width = "90"></ColumnDefinition>
+                    <ColumnDefinition Width = "90"></ColumnDefinition>
+                    <ColumnDefinition Width = "90"></ColumnDefinition>
+                    <ColumnDefinition Width = "90"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name = "Cell00"
+                        Clicked = "CellClick"
+                        Grid.Row = "0"
+                        Grid.Column = "0"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell01"
+                        Clicked = "CellClick"
+                        Grid.Row = "0"
+                        Grid.Column = "1"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell02"
+                        Clicked = "CellClick"
+                        Grid.Row = "0"
+                        Grid.Column = "2"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell03"
+                        Clicked = "CellClick"
+                        Grid.Row = "0"
+                        Grid.Column = "3"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell10"
+                        Clicked = "CellClick"
+                        Grid.Row = "1"
+                        Grid.Column = "0"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell11"
+                        Clicked = "CellClick"
+                        Grid.Row = "1"
+                        Grid.Column = "1"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell12"
+                        Clicked = "CellClick"
+                        Grid.Row = "1"
+                        Grid.Column = "2"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell13"
+                        Clicked = "CellClick"
+                        Grid.Row = "1"
+                        Grid.Column = "3"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell20"
+                        Clicked = "CellClick"
+                        Grid.Row = "2"
+                        Grid.Column = "0"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell21"
+                        Clicked = "CellClick"
+                        Grid.Row = "2"
+                        Grid.Column = "1"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell22"
+                        Clicked = "CellClick"
+                        Grid.Row = "2"
+                        Grid.Column = "2"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell23"
+                        Clicked = "CellClick"
+                        Grid.Row = "2"
+                        Grid.Column = "3"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell30"
+                        Clicked = "CellClick"
+                        Grid.Row = "3"
+                        Grid.Column = "0"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell31"
+                        Clicked = "CellClick"
+                        Grid.Row = "3"
+                        Grid.Column = "1"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell32"
+                        Clicked = "CellClick"
+                        Grid.Row = "3"
+                        Grid.Column = "2"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+                <Button x:Name = "Cell33"
+                        Clicked = "CellClick"
+                        Grid.Row = "3"
+                        Grid.Column = "3"
+                        BackgroundColor = "{DynamicResource SecondaryColor}"
+                        Text = ""
+                        FontSize = "50"
+                        FontAttributes = "Bold"
+                        TextColor = "{DynamicResource PrimaryTextColor}"
+                        >
+                </Button>
+            </Grid>
+            <Button x:Name = "BackParametresPage"
+                    Clicked = "BackParameteresPageClick"
+                    HeightRequest = "60"
+                    WidthRequest = "200"
+                    HorizontalOptions = "Center"
+                    BackgroundColor = "{DynamicResource NavigationBarColor}"
+                    BorderWidth = "5"
+                    BorderColor = "{DynamicResource PrimaryColor}"
+                    CornerRadius = "10"
+                    Text = "НАЗАД"
+                    FontSize = "18"
+                    FontAttributes = "Bold"
+                    TextColor = "{DynamicResource PrimaryTextColor}"
+                    >
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
